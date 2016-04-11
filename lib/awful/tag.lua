@@ -703,6 +703,14 @@ end
 -- See the layout suit documentation for information about how the master width
 -- factor is used.
 --
+-- Here is the property effect on the tiled layouts:
+--
+--@DOC_awful_layout_dynamic_suit_tile_mwfact_EXAMPLE@
+--
+-- Here is the property effect on the magnifier layout:
+--
+--@DOC_awful_layout_dynamic_suit_magnifier_mwfact_EXAMPLE@
+--
 -- **Signal:**
 --
 -- * *property::mwfact* (deprecated)
@@ -985,6 +993,8 @@ end
 -- This property allow to waste space on the screen in the name of style,
 -- unicorns and readability.
 --
+-- @DOC_awful_layout_dynamic_suit_tile_gap_EXAMPLE@
+--
 -- **Signal:**
 --
 -- * *property::useless_gap*
@@ -1161,6 +1171,10 @@ end
 
 --- Set the number of master windows.
 --
+-- Here is the property effect on the tiled layouts:
+--
+--@DOC_awful_layout_dynamic_suit_tile_nmaster_EXAMPLE@
+--
 -- **Signal:**
 --
 -- * *property::nmaster* (deprecated)
@@ -1274,6 +1288,10 @@ end
 -- @see column_count
 
 --- Set the number of columns.
+--
+-- Here is the property effect on the tiled layouts:
+--
+--@DOC_awful_layout_dynamic_suit_tile_ncol_EXAMPLE@
 --
 -- **Signal:**
 --
