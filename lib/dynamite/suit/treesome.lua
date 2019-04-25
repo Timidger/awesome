@@ -98,6 +98,7 @@ local function add(self, w1, ...)
     end
 
     local target = find_current(self)
+	local container_direction = _G["container_direction"] or "horizontal"
 
     if target then
         local geo = target._client:geometry()
@@ -105,7 +106,7 @@ local function add(self, w1, ...)
             target,
             w1,
             layout = create_container(
-                geo.width > geo.height and "horizontal" or "vertical", self
+			  container_direction, self
             )
         }
         self:replace_widget(target, l, true)
@@ -123,7 +124,6 @@ local function ctr()
     main._private._add = main.add
     rawset(main, "add", add)
     main:connect_signal("focused", focus_changed)
-
     return main
 end
 
